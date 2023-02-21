@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class TareaDos{
+	
+	public static void main(String[] args) {
+		String[] nombres;
+		System.out.println("Introduzca nombre, profesión y País: ");
+		Scanner teclado = new Scanner(System.in);
+		String input = "";
+		input = teclado.nextLine(); // Jesús Profesor México
+		nombres = input.split(" "); // 	System.out.println("2o elem= + nombres[1]" )
+		for (int i=0; i < nombres.length ; i++ ){
+			System.out.println("Nombre " + (i+1)+"="+ nombres[i]);
+		}
+	}
